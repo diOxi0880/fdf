@@ -1,0 +1,42 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+// font-family: 'Montserrat', sans-serif;
+
+@mixin textstyle ($fs, $fw, $lh, $cl) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $cl;
+}
+// @include textstyle(, , , );
+
+@mixin flex {
+    display: flex;
+    box-sizing: border-box;
+}
+// @include flex;
+
+@mixin hidden {
+    visibility: hidden;
+    position: absolute;
+}
+// @include hidden;
+
+@mixin visible {
+    visibility: visible;
+    position: relative;
+}
+// @include visible;
+
+$bc: rgba(0, 0, 0, 1);
+$hbc: rgba(39, 38, 42, 1);
+$hbc0: rgba(39, 38, 42, 0);
+$lbc: rgba(50, 50, 50, 1);
+$l2bc: rgba(59, 59, 59, 1);
+$wt: rgba(255, 255, 255, 1);
+$lwt: rgba(244, 244, 244, 1);
+$pp: rgba(141, 129, 172, 1);
+$dpp: rgba(99, 92, 115, 1);
+$gy: rgba(132, 142, 151, 1);
+$ldn: rgba(100, 87, 102, 1);

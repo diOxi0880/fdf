@@ -1,0 +1,31 @@
+{
+  "name": "land3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hhh",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/register": "^7.22.15",
+    "autoprefixer": "^10.4.16",
+    "browser-sync": "^2.29.3",
+    "del": "^7.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-pretty-html": "^2.0.10",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "imagemin": "^8.0.1",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "sass": "^1.69.0"
+  }
+}

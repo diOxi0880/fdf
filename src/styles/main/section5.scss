@@ -1,0 +1,181 @@
+.section5 {
+    background-image: url('../images/bgd_image3/bg_bottom_mobile.png');
+    background-position: center center;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    .section5_content_container {
+        padding: 0px 10px 10px;
+        .section5_first_title {
+            @include textstyle(28px, 700, 42px, $wt);
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 32px;
+        }
+        .section5_grid {
+            display: grid;
+            box-sizing: border-box;
+            grid-template-rows: minmax(0, 0.8fr) minmax(0, 0.8fr) minmax(0, 1fr) minmax(0, 0.8fr);
+            gap: 18px;
+            place-items: center;
+            .section5_content {
+                @include flex;
+                flex-direction: column;
+                width: 100%;
+                max-width: 257px;
+                height: 457px;
+                justify-content: space-between;
+                background-color: rgba(255, 255, 255, 0.11);
+                margin: 0px 22px;
+                .section5_second_title {
+                    @include textstyle(24px, 400, 24px, $wt);
+                    text-align: center;
+                    text-transform: uppercase;
+                    margin: 36px 0px;
+                }
+                .section5_card {
+                    height: 360px;
+                    padding: 30px 10px 39px;
+                    width: 100%;
+                    @include flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    align-items: center;
+                    background-color: rgba(255, 255, 255, 0.06);
+                    .section5_price {
+                        @include textstyle(60px, 700, 62px, $wt);
+                        text-align: center;
+                    }
+                    .section5_for_price {
+                        @include textstyle(14px, 400, 16px, $wt);
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                    .section5_inner_border {
+                        width: 60px;
+                        height: 5px;
+                        background-color: $pp;
+                        margin: 18px 0px 10px
+                    }
+                    .section5_description {
+                        @include textstyle(16px, 400, 18px, $wt);
+                        text-align: center;
+                    }
+                    .section5_submit_button {
+                        font-family: 'Montserrat', sans-serif;
+                        text-transform: uppercase;
+                        @include textstyle(15px, 400, 15px, $wt);
+                        text-align: center;
+                        padding: 13.5px 36px;
+                        border: none;
+                        border-radius: 40px;
+                        background-color: rgba(255, 255, 255, 0.15);
+                        margin-top: 19px;
+                    }
+                }  
+            }
+            .section5__special__card {
+                background-color: rgba(51, 32, 52, 1);
+                max-width: 299px;
+                height: 560px;
+                .section5_card {
+                    height: 560px-111px;
+                    padding: 14px 35px 47px;
+                    gap: 16px;
+                    background-color: rgba(70, 48, 72, 1);
+                    .section5_price {
+                        @include textstyle(82px, 700, 84px, $wt);
+                        & span {
+                            @include textstyle(82px, 400, 84px, $wt);
+                        }
+                    }
+                    .section5_inner_border {
+                        margin: 30px 0px 24px
+                    }
+                    .section5_submit_button {
+                        @include textstyle(16px, 400, 18px, $wt);
+                        padding: 18.5px 48px;
+                        margin-top: 83px-16px;
+                    }
+                }
+            }
+        }   
+    }
+}
+@media screen and (min-width: 481px) {
+    .section5 {
+        background-image: url('../images/bgd_image3/bg_bottom_medium.png');
+        .section5_content_container {
+            padding: 80px 10px 94px;
+            .section5_first_title {
+                @include textstyle(28px, 700, 42px, $wt);
+                margin-bottom: 39px;
+            }
+            .section5_grid {
+                grid-template-rows: minmax(0, 0.8fr) minmax(0, 1fr);
+                grid-template-columns: minmax(0, 0.8fr) minmax(0, 0.8fr);
+                row-gap: 25px;
+                column-gap: 30px;
+                .section5_content {
+                    margin: 0px;
+                }
+                .section5__first__element {
+                    justify-self: end;
+                    margin-left: 121px-79px;
+                }
+                .section5__second__element {
+                    justify-self: start;
+                    margin-right: 121px-79px;
+                }
+                .section5__fourth__element {
+                    justify-self: start;
+                    margin-right: 121px-79px;
+                }
+                .section5__special__card {
+                    justify-self: end;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 993px) {
+    .section5 {
+        background-image: url('../images/bgd_image3/bg_bottom_large.png');
+        .section5_content_container {
+            @include flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 88px 10px 97px;
+            .section5_first_title {
+                @include textstyle(48px, 700, 50px, $wt);
+                margin-bottom: 61px;
+            }
+            .section5_grid {
+                grid-template-columns: minmax(0, 0.85fr) minmax(0, 0.85fr) minmax(0, 1fr) minmax(0, 0.85fr);
+                grid-template-rows: 1fr;
+                column-gap: 15px;
+                max-width: 1114px;
+                
+                .section5_content {
+                    margin: 0px;
+                }
+                .section5__first__element {
+                    justify-self: end;
+                    margin-left: 0px;
+                }
+                .section5__second__element {
+                    justify-self: start;
+                    margin-right: 0px;
+                }
+                .section5__fourth__element {
+                    justify-self: start;
+                    margin-right: 0px;
+                }
+                .section5__special__card {
+                    justify-self: center;
+                    margin: 0px;
+                }
+            }
+        }
+    }
+}

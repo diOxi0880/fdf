@@ -1,0 +1,131 @@
+.section1 {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('../images/bgd_image/bgd_img.png');
+    background-position: center center;
+    background-size: cover; 
+    height: 718px;
+    margin-bottom: 100px;
+    .section1_container {
+        @include flex;
+        flex-direction: column;
+        gap: 400px;
+        .section1_flex_top {
+            @include flex;
+            flex-direction: column;
+            gap: 19px;
+            align-items: center;
+            margin-top: 153px;
+            h1 {
+                @include textstyle(48px, 700, 48px, $wt);
+            }
+            .section1_flex_center {
+                @include flex;
+                flex-direction: column;
+                gap: 14px;
+                align-items: center;
+                .second_title {
+                    padding: 0px 16px;
+                    @include textstyle(18px, 400, 24px, $pp);
+                    max-width: 258px;
+                    text-align: center
+                }
+                .description {
+                    @include textstyle(14px, 400, 14px, $gy);
+                }
+            }
+        }
+        .section1_flex_bottom {
+            @include flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
+            margin-bottom: 72px;
+            .download_button {
+                font-family: 'Montserrat', sans-serif;
+                width: 290px;
+                height: 45px;
+                @include textstyle(18px, 700, 20px, $wt);
+                padding: 13px 29px;
+                border-radius: 40px;
+                background-color: $pp;
+                border: 2px solid $pp;
+                &:hover {
+                    color: $pp;
+                    background-color: $wt;
+                }
+            }
+            .description {
+                @include textstyle(14px, 400, 14px, $gy);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .section1 {
+        height: 800px;
+        .section1_container {
+            gap: 420px;
+            .section1_flex_top {
+                margin-top: 187px;
+                h1 {
+                    @include textstyle(72px, 700, 72px, $wt);
+                }
+                .section1_flex_center {
+                    gap: 19px;
+                    .second_title {
+                        font-size: 24px;
+                        max-width: 700px;
+                    }
+                }
+            }
+            .section1_flex_bottom {
+                margin-bottom: 94px;
+                .download_button {
+                    @include textstyle(21px, 700, 23px, $wt);
+                    width: 390px;
+                    height: 62px;
+                }
+                .description {
+                    line-height: 16px;
+                }
+            }
+        }  
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .section1 {
+        .section1_container {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            height: 929px;
+            .section1_flex_top {
+                margin-top: 183px;
+                h1 {
+                    @include textstyle(82px, 700, 82px, $wt);
+                }
+                .section1_flex_center {
+                    gap: 19px;
+                    .second_title {
+                        font-size: 30px;
+                        line-height: 30px;
+                        max-width: 860px;
+                    }
+                }
+            }
+            .section1_flex_bottom {
+                margin-bottom: 66px;
+                .download_button {
+                    @include textstyle(21px, 700, 22px, $wt);
+                    width: 390px;
+                    height: 62px;
+                }
+                .description {
+                    line-height: 15px;
+                }
+            }
+        }
+    }
+}

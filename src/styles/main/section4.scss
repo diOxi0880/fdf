@@ -1,0 +1,102 @@
+.section4 {
+    background-image: url('../images/bgd_image2/bg_mobile.png');
+    background-position: center center;
+    background-size: cover;
+    .section4_content_container {
+        padding: 57px 15px 12px;
+        .section4_title {
+            font-family: 'Montserrat', sans-serif;
+            @include textstyle(36px, 700, 48px, $wt);
+            text-align: center;
+            margin-bottom: 53px;
+        }
+        .section4_grid {
+            display: grid;
+            box-sizing: border-box;
+            grid-template-rows: repeat(6, 1fr);
+            gap: 40px;
+            width: 100%;
+            .section4_cell {
+                @include flex;
+                align-self: end;
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+                img {
+                    width: fit-content;
+                    height: fit-content;
+                }
+                .section4_paragraph {
+                    @include textstyle(16px, 700, 24px, $wt);
+                    font-style: italic;
+                    text-align: center;
+                }
+            }
+        }
+        .section4_bottom_flex {
+            @include flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 29px;
+            .section4_description {
+                @include textstyle(14px, 400, 21px, $gy);
+                text-align: center;
+            }
+            .section4_border {
+                background-color: $ldn;
+                height: 2px;
+                width: 245px;
+            }
+        }  
+    }    
+}
+
+@media screen and (min-width: 481px) {
+    .section4 {      
+        background-image: url('../images/bgd_image2/bg_medium.png');
+        .section4_content_container {
+            padding: 86px 15px 10px;
+            .section4_title {
+                @include textstyle(42px, 700, 44px, $wt);
+            }
+            .section4_grid {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, auto);
+                gap: 80px;
+                width: 100%;
+            }
+            .section4_bottom_flex {
+                gap: 20px;
+                margin-top: 54px;
+            }
+        }  
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .section4 {
+        background-image: url('../images/bgd_image2/bg_large.png');
+        @include flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .section4_content_container {
+            padding: 108px 96px 0px;
+            max-width: 1200px;
+            
+            .section4_title {
+                @include textstyle(48px, 700, 50px, $wt);
+            }
+            .section4_grid {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, auto);
+                gap: 120px;
+            }
+            .section4_bottom_flex {
+                gap: 18px;
+                margin-top: 115px;
+            }
+        } 
+    }
+}
